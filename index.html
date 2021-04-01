@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DARK PLAYER</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" integrity="sha512-PgQMlq+nqFLV4ylk1gwUOgm6CtIIXkKwaIHp/PAIWHzig/lKZSEGKEysh0TCVbHJXCLN7WetD8TFecIky75ZfQ==" crossorigin="anonymous" />
+</head>
+<body>
+    <div class="container" id="container">
+        
+        <div class="music_div">
+            <h2 class="music_name" id="music_name">look at me</h2>
+            <h4 class="singer_name" id="singer_name">Joyer Lucas</h4>
+            <div class="music_picture">
+                <img class="pic_inside_music" id="pic_inside_music" src="picture/ADHD.JPG" alt="">
+            </div>
+            <audio id="audio" src="music/ADHD.mp3" onended="next_song()" ></audio>
+            <div class="progress" id="progress"></div>
+            <div class="controler">
+                
+                <i class="fas fa-backward" id="backward" title="Backward"></i>
+                <i class="fas fa-play" id="play"></i>
+                <i class="fas fa-forward" id="Forward" title="Forward"></i>
+                
+            </div>
+            <!-- <div id="white"></div> -->
+            <canvas id="canvas"></canvas>
+        </div>
+    </div>
+</body>
+<script src="music.js"></script>
+</html>
