@@ -2,7 +2,7 @@
 function hi() {
 
   var playPromise = audio.play();
- 
+  audio.load();
   if (playPromise !== undefined) {
     playPromise.then(_ => {
       var analyser = context.createAnalyser();
